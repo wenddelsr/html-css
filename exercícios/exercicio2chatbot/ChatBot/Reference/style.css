@@ -1,0 +1,174 @@
+/*
+Agora bora estilizar essa bagaça meu parceiro!!!
+
+Passos
+1. Criar class="" (classes) nos elementos html.
+
+2. Estilizar Fontes (procurar no fonts.google.com
+font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif;
+
+3. Adicionar <background> no <body>
+
+4. Estilizar <header> ".cabeçalho"
+TODOS ELES MANO, VAI POR ORDEM
+
+5. Estilizar <main> ".conteudo"
+TODOS ELES.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* { 
+  /*"resetar" configurações globais do navegador para facilitar a estilização, geralmente os navegadores adicionam margin, padding globais*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box
+}
+
+body {
+  /*passo 3*/
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.cabecalho {
+  /*passo 4*/
+  display: flex;
+  /*nesse caso a flexbox está sendo aplicada ao Parent-Pai .cabecalho*/
+  flex-direction: row; 
+  /*Linhas ou colunas?
+  row | row-reverse |
+  column | column-reverse*/
+  align-items: center;
+  /*alinhar .cabecalho no centro
+  stretch | flex-start | flex-end | center | baseline | first baseline*/
+  justify-content: space-around ;
+  /*modo de espaçamento
+  flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;*/
+  padding: 24px;
+  /*movimentar .cabecalho para posicionar na pagina*/
+}
+
+/*AQUI VC VAI ESTILIZAR OS CABEÇALHOS
+Por padrão comece da Esquerda para a Direita e siga a ordem das classes.
+*/
+.cabecalho-image {
+  /*4.1 aqui foi mudado a altura da logo do cabecalho*/
+  height: 72px;
+}
+
+.cabecalho-menu {
+  /*4.2 preste atenção nas tags utilizadas para o flexbox
+  existem tags para pai e filho. use elas para poder estilizar bro
+  abaixo foi adicionado 'display: flex; e <gap> espaçamento entre as partes do menu do cabecalho*/
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  /*4.3 Inserir fonte correta
+  */
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*PASSO 5 BRO
+VAI PELA ORDEM e adicione todos os '.conteudo-' para começar a estilização*/
+
+.conteudo {
+  /*Geralmente o conteúdo inserido aqui de border, font, etc vc vai encontar no FIGMA*/
+  border-top: 0.4px solid #FFF2E7;
+  margin-bottom: 48px;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFF2E7;
+}
+
+.conteudo-principal-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  color: #ECD6C4;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2E7;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem {
+  /*hackzin para centralizar UM ELEMENTO apenas. se for mais que 1 é bom usar flexbox ou grid
+  display: block e margin: 0 auto
+  */
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
