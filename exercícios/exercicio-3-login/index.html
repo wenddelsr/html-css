@@ -16,14 +16,28 @@
       <section class="formulario-login">
         <h1 class="title">Login</h1>
         <form action="#">
-          <div class="email-box">
+          <label class="email-box">
             <i class="fa fa-envelope"></i>
-            <input type="text" placeholder="Coloque seu email" />
-          </div>
-          <div class="email-box">
+            <input
+              type="email"
+              placeholder="Coloque seu email"
+              autofocus
+              autocomplete="email"
+              aria-label="Campo do email"
+            />
+          </label>
+          <label class="email-box">
             <i class="fa fa-lock"></i>
-            <input type="text" placeholder="Coloque sua senha" />
-          </div>
+            <input
+              type="password"
+              placeholder="Coloque sua senha"
+              minlength="6"
+              maxlength="10"
+              pattern="[0-9a-fA-F{6,10}"
+              title="No mínimo 6 e no máximo 10 caracteres"
+              aria-label="Campo da senha"
+            />
+          </label>
           <div class="esqueceu-senha"><a href="#">Esqueceu a senha?</a></div>
           <div class="email-box">
             <input type="submit" value="Entrar" />
@@ -41,7 +55,9 @@
       </section>
 
       <section class="imagem-login">
-        <img class="imagem-login-imagem" src="/imagemlogin.svg" alt="" />
+        <a href="http://www.freepik.com" target="_blank">
+          <img class="imagem-login-imagem" src="/imagemlogin.svg" alt="" />
+        </a>
       </section>
     </main>
   </body>

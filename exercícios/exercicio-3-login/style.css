@@ -8,7 +8,7 @@
 }
 
 :root {
-  --default-color: #2200ff84;
+  --default-color: #279386;
 }
 
 ::selection {
@@ -73,6 +73,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease;
   
 }
 
@@ -111,7 +112,7 @@ body {
 }
 
 .container .formulario-login .midias-sociais i {
-  margin: 10px;
+  margin: 0px 15px 15px 15px;
   font-size: 26px;
   cursor: pointer;
 }
@@ -125,7 +126,7 @@ body {
   color: var(--default-color);
   margin-top: 145px;
 }
-
+/**/
 .container .formulario-login .botao-entrar input {
   width: 100%;
   height: auto;
@@ -138,9 +139,7 @@ body {
   margin-top: 10px;
 }
 
-.container .imagem-login {
-  width: 50%;
-}
+
 
 @media (max-width:800px) {
   .imagem-login{
@@ -151,5 +150,5 @@ body {
 .imagem-login-imagem {
   width: 300px;
   height: 400px;
-  margin-left: 70px;
+  
 }
